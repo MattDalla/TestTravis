@@ -4,7 +4,7 @@ jdk:
     
 addons:
     sonarcloud: 
-    organization: MattDalla
+    organization: "mattdalla"
     token: 
       secure: travis encrypt 2c3f9e1f02e96006973982df37ef2e744ccd0873
       
