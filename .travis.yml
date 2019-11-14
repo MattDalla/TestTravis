@@ -1,7 +1,13 @@
 language: java
 jdk:
     -openjdk11
+    
+addons: 
+    sonarcloud:
+      organization: "mattdalla"
+      token:
+        secure: travis encrypt 38255c5017f59b5f3a00a9c10ceb2e8da51996e9
       
 script: 
 - ant build
-
+- sonar-scanner
